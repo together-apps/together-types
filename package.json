@@ -1,0 +1,19 @@
+{
+  "name": "together-types",
+  "version": "1.0.0",
+  "description": "This repository contains the typings for together.",
+  "main": "collections.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3DJakob/together-types.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/3DJakob/together-types/issues"
+  },
+  "homepage": "https://github.com/3DJakob/together-types#readme"
+}
