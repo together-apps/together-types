@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/3DJakob/together-types/issues"
   },
-  "homepage": "https://github.com/3DJakob/together-types#readme"
+  "homepage": "https://github.com/3DJakob/together-types#readme",
+  "devDependencies": {
+    "ts-standard": "^12.0.2"
+  }
 }

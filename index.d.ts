@@ -1,4 +1,3 @@
-
 // Profile
 export interface UserRecord {
   id: string
@@ -10,6 +9,8 @@ export interface UserRecord {
   agoraUid: number
 }
 
+export const eventFormats: Array<{ value: EventFormat, label: string }>
+
 // Sessions
 export enum EventFormat {
   OneAtTheTime = 'one_at_the_time',
@@ -17,13 +18,6 @@ export enum EventFormat {
   HostOnly = 'host_only',
   OnePerson = 'one_person'
 }
-
-export const eventFormats = [
-  { value: EventFormat.OneAtTheTime, label: 'One at the time' },
-  { value: EventFormat.AllAtOnce, label: 'All at once' },
-  { value: EventFormat.HostOnly, label: 'Host only' },
-  { value: EventFormat.OnePerson, label: 'One person' }
-]
 
 export interface Event {
   id: string
