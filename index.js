@@ -1,18 +1,18 @@
-export const eventFormats = [
+const eventFormats = [
   { value: 'one_at_the_time', label: 'One at the time' },
   { value: 'all_at_once', label: 'All at once' },
   { value: 'host_only', label: 'Host only' },
   { value: 'one_person', label: 'One person' }
 ]
 
-export const pushNotificationTypes = {
+const pushNotificationTypes = {
   SessionInvite: 'sessionInvite',
   SessionStarting: 'sessionStarting',
   SessionTimeConfirmed: 'sessionTimeConfirmed',
   SessionStartingSoon: 'sessionStartingSoon'
 }
 
-export const sessionRequiredFields = [
+const sessionRequiredFields = [
   'agenda',
   'authoredByUserID',
   'categoryID',
@@ -36,10 +36,18 @@ export const sessionRequiredFields = [
   // 'videoID',
 ]
 
-export const sessionOptionalFields = [
+const sessionOptionalFields = [
   'finishedAt',
   'startsAt',
   'videoID'
 ]
 
 const test = 'foooooooo'
+
+module.exports = {
+  eventFormats,
+  pushNotificationTypes,
+  sessionRequiredFields,
+  sessionOptionalFields,
+  test
+}
