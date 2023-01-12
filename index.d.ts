@@ -78,6 +78,13 @@ export enum PushNotificationType {
   SessionStartingSoon = 'sessionStartingSoon',
 }
 
+export const pushNotificationTypes: {
+  SessionInvite: PushNotificationType.SessionInvite
+  SessionStarting: PushNotificationType.SessionStarting
+  SessionTimeConfirmed: PushNotificationType.SessionTimeConfirmed
+  SessionStartingSoon: PushNotificationType.SessionStartingSoon
+}
+
 type SessionKeys = keyof Session<any>
 
 export const sessionRequiredFields: SessionKeys[]
