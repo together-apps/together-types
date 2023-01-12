@@ -5,13 +5,6 @@ const eventFormats = [
   { value: 'one_person', label: 'One person' }
 ]
 
-const pushNotificationTypes = {
-  SessionInvite: 'sessionInvite',
-  SessionStarting: 'sessionStarting',
-  SessionTimeConfirmed: 'sessionTimeConfirmed',
-  SessionStartingSoon: 'sessionStartingSoon'
-}
-
 const sessionRequiredFields = [
   'agenda',
   'authoredByUserID',
@@ -44,7 +37,6 @@ const sessionOptionalFields = [
 
 module.exports = {
   eventFormats,
-  pushNotificationTypes,
   sessionRequiredFields,
   sessionOptionalFields
 }
