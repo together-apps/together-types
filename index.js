@@ -42,12 +42,9 @@ const sessionOptionalFields = [
   'videoID'
 ]
 
-const test = 'foooooooo'
-
 module.exports = {
   eventFormats,
   pushNotificationTypes,
   sessionRequiredFields,
-  sessionOptionalFields,
-  test
+  sessionOptionalFields
 }
