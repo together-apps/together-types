@@ -77,7 +77,7 @@ export enum PushNotificationType {
   SessionTimeConfirmed = 'sessionTimeConfirmed',
 }
 
-type SessionKeys<FirebaseTimestamp> = keyof Session<FirebaseTimestamp>
+type SessionKeys = keyof Session<any>
 
-export type sessionRequiredFields<FirebaseTimestamp> = Array<SessionKeys<FirebaseTimestamp>>
-export type sessionOptionalFields<FirebaseTimestamp> = Array<SessionKeys<FirebaseTimestamp>>
+export const sessionRequiredFields: SessionKeys[]
+export const sessionOptionalFields: SessionKeys[]
