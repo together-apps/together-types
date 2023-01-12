@@ -46,6 +46,7 @@ export interface SessionStartingTime {
   acceptedBy: string[]
 }
 
+// When updating this, also update the sessionRequiredFields and sessionOptionalFields in index.js
 export interface Session<FirebaseTimestamp> {
   agenda: Event[]
   authoredByUserID: string
@@ -69,3 +70,7 @@ export interface Session<FirebaseTimestamp> {
   title: string
   videoID?: string
 }
+type SessionKeys<FirebaseTimestamp> = keyof Session<FirebaseTimestamp>
+
+export type sessionRequiredFields<FirebaseTimestamp> = Array<SessionKeys<FirebaseTimestamp>>
+export type sessionOptionalFields<FirebaseTimestamp> = Array<SessionKeys<FirebaseTimestamp>>

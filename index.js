@@ -4,3 +4,33 @@ export const eventFormats = [
   { value: 'host_only', label: 'Host only' },
   { value: 'one_person', label: 'One person' }
 ]
+
+export const sessionRequiredFields = [
+  'agenda',
+  'authoredByUserID',
+  'categoryID',
+  'createdBy',
+  'currentEvent',
+  'description',
+  // 'finishedAt',
+  'help',
+  'howItWorks',
+  'id',
+  'location',
+  'participants',
+  'principles',
+  'proposedStartingTimes',
+  'recommendedNumberOfParticipants',
+  'setting',
+  // 'startsAt',
+  'subtitle',
+  'tip',
+  'title'
+  // 'videoID',
+]
+
+export const sessionOptionalFields = [
+  'finishedAt',
+  'startsAt',
+  'videoID'
+]
