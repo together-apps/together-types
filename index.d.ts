@@ -75,6 +75,7 @@ export enum PushNotificationType {
   SessionInvite = 'sessionInvite',
   SessionStarting = 'sessionStarting',
   SessionTimeConfirmed = 'sessionTimeConfirmed',
+  SessionStartingSoon = 'sessionStartingSoon',
 }
 
 type SessionKeys = keyof Session<any>
