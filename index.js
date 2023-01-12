@@ -41,3 +41,5 @@ export const sessionOptionalFields = [
   'startsAt',
   'videoID'
 ]
+
+const test = 'foooooooo'

@@ -89,3 +89,5 @@ type SessionKeys = keyof Session<any>
 
 export const sessionRequiredFields: SessionKeys[]
 export const sessionOptionalFields: SessionKeys[]
+
+export const test: string
