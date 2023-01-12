@@ -71,11 +71,11 @@ export interface Session<FirebaseTimestamp> {
   videoID?: string
 }
 
-export enum PushNotificationType {
-  SessionInvite = 'sessionInvite',
-  SessionStarting = 'sessionStarting',
-  SessionTimeConfirmed = 'sessionTimeConfirmed',
-  SessionStartingSoon = 'sessionStartingSoon',
+export const PushNotificationTypes: {
+  sessionInvite: 'sessionInvite'
+  sessionStarting: 'sessionStarting'
+  sessionTimeConfirmed: 'sessionTimeConfirmed'
+  sessionStartingSoon: 'sessionStartingSoon'
 }
 
 type SessionKeys = keyof Session<any>

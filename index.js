@@ -35,8 +35,16 @@ const sessionOptionalFields = [
   'videoID'
 ]
 
+const PushNotificationTypes = {
+  sessionInvite: 'sessionInvite',
+  sessionStarting: 'sessionStarting',
+  sessionTimeConfirmed: 'sessionTimeConfirmed',
+  sessionStartingSoon: 'sessionStartingSoon'
+}
+
 module.exports = {
   eventFormats,
   sessionRequiredFields,
-  sessionOptionalFields
+  sessionOptionalFields,
+  PushNotificationTypes
 }
