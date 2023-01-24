@@ -7,6 +7,7 @@ export interface UserRecord {
   bio: string
   avatar: string
   agoraUid: number
+  queryName: string
 }
 
 export const eventFormats: Array<{ value: EventFormat, label: string }>
