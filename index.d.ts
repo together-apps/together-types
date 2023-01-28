@@ -8,6 +8,7 @@ export interface UserRecord {
   avatar: string
   agoraUid: number
   queryName: string
+  notificationsEnabled: boolean
 }
 
 export const eventFormats: Array<{ value: EventFormat, label: string }>
