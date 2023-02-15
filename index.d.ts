@@ -11,7 +11,11 @@ export interface UserRecord {
   notificationsEnabled: boolean
 }
 
-export const eventFormats: Array<{ value: EventFormat, label: string }>
+type KeyOfEventFormat = keyof typeof EventFormat
+
+export const eventFormats: {
+  keyOfEventFormat: { value: EventFormat, label: string }
+}
 
 // Sessions
 export enum EventFormat {
