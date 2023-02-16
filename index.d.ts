@@ -11,18 +11,31 @@ export interface UserRecord {
   notificationsEnabled: boolean
 }
 
-type KeyOfEventFormat = keyof typeof EventFormat
-
-export const eventFormats: {
-  keyOfEventFormat: { value: EventFormat, label: string }
-}
-
 // Sessions
 export enum EventFormat {
   OneAtTheTime = 'one_at_the_time',
   AllAtOnce = 'all_at_once',
   HostOnly = 'host_only',
   OnePerson = 'one_person'
+}
+
+export const eventFormats: {
+  [EventFormat.OneAtTheTime]: {
+    value: EventFormat.OneAtTheTime
+    label: 'One at the time'
+  }
+  [EventFormat.AllAtOnce]: {
+    value: EventFormat.AllAtOnce
+    label: 'All at once'
+  }
+  [EventFormat.HostOnly]: {
+    value: EventFormat.HostOnly
+    label: 'Host only'
+  }
+  [EventFormat.OnePerson]: {
+    value: EventFormat.OnePerson
+    label: 'One person'
+  }
 }
 
 export interface Event {
