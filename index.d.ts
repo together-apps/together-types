@@ -90,6 +90,15 @@ export interface Session<FirebaseTimestamp> {
   videoID?: string
 }
 
+export interface SessionReview<FirebaseTimestamp> {
+  authorID: string
+  sessionID: string
+  rating: number
+  publicComment: string
+  personalComment: string
+  createdAt: FirebaseTimestamp
+}
+
 export const PushNotificationTypes: {
   sessionInvite: 'sessionInvite'
   sessionStarting: 'sessionStarting'
