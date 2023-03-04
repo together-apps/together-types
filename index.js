@@ -36,6 +36,7 @@ const sessionRequiredFields = [
   'setting',
   // 'startsAt',
   'subtitle',
+  'templateID',
   'tip',
   'title'
   // 'videoID',
