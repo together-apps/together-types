@@ -91,11 +91,19 @@ export interface Session<FirebaseTimestamp> {
   videoID?: string
 }
 
-export interface SessionReview<FirebaseTimestamp> {
+// Session reviews are public comments visible to everyone
+export interface SessionTemplateReview<FirebaseTimestamp> {
+  authorID: string
+  templateID: string
+  comment: string
+  createdAt: FirebaseTimestamp
+}
+
+// Reflections are private notes only visible to the author
+export interface SessionReflection<FirebaseTimestamp> {
   authorID: string
   sessionID: string
-  publicComment: string
-  personalComment: string
+  reflection: string
   createdAt: FirebaseTimestamp
 }
 
