@@ -93,7 +93,6 @@ export interface Session<FirebaseTimestamp> {
 export interface SessionReview<FirebaseTimestamp> {
   authorID: string
   sessionID: string
-  rating: number
   publicComment: string
   personalComment: string
   createdAt: FirebaseTimestamp
