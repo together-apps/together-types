@@ -92,9 +92,8 @@ export interface Session<FirebaseTimestamp> {
 }
 
 // Session reviews are public comments visible to everyone
-export interface SessionTemplateReview<FirebaseTimestamp> {
+export interface Review<FirebaseTimestamp> {
   authorID: string
-  templateID: string
   comment: string
   createdAt: FirebaseTimestamp
 }
