@@ -77,6 +77,7 @@ export interface Session<FirebaseTimestamp> {
   help: string
   howItWorks: string
   id: string
+  intro: string[]
   location: string
   participants: string[]
   principles: string

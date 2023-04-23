@@ -28,6 +28,7 @@ const sessionRequiredFields = [
   'help',
   'howItWorks',
   'id',
+  'intro',
   'location',
   'participants',
   'principles',
