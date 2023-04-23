@@ -77,7 +77,6 @@ export interface Session<FirebaseTimestamp> {
   help: string
   howItWorks: string
   id: string
-  templateID: string
   location: string
   participants: string[]
   principles: string
@@ -86,6 +85,7 @@ export interface Session<FirebaseTimestamp> {
   setting: string
   startsAt?: string // undefined if no decided time yet
   subtitle: string
+  templateID: string
   tip: string
   title: string
   videoID?: string
