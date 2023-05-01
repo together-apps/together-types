@@ -87,7 +87,7 @@ export interface Session<FirebaseTimestamp> {
   startsAt?: string // undefined if no decided time yet
   subtitle: string
   templateID: string
-  tip: string
+  tip: string[]
   title: string
   videoID?: string
 }
