@@ -68,7 +68,7 @@ export interface SessionStartingTime {
 // When updating this, also update the sessionRequiredFields and sessionOptionalFields in index.js
 export interface Session<FirebaseTimestamp> {
   agenda: Event[]
-  authoredByUserID?: string
+  authoredBy?: string
   categoryID: string
   createdBy: string
   currentEvent: OngoingEvent<FirebaseTimestamp> | 'waiting' | 'finished'
