@@ -120,3 +120,10 @@ export const sessionRequiredFields: SessionKeys[]
 export const sessionOptionalFields: SessionKeys[]
 
 export const test: string
+
+export interface DiscoverCategory {
+  title: string
+  type: 'curated' // TODO add types for auto-added sessions like 'popular' and 'quick' etc
+  sessions?: string[]
+  thumbnailType: 'video' | 'default'
+}
