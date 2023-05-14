@@ -127,4 +127,5 @@ export interface DiscoverCategory {
   type: 'curated' // TODO add types for auto-added sessions like 'popular' and 'quick' etc
   sessions?: string[]
   thumbnailType: 'video' | 'default'
+  priority: number
 }
