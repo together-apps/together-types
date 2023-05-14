@@ -122,6 +122,7 @@ export const sessionOptionalFields: SessionKeys[]
 export const test: string
 
 export interface DiscoverCategory {
+  id: string
   title: string
   type: 'curated' // TODO add types for auto-added sessions like 'popular' and 'quick' etc
   sessions?: string[]
