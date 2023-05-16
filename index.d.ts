@@ -128,4 +128,5 @@ export interface DiscoverCategory {
   sessions?: string[]
   thumbnailType: 'video' | 'default'
   priority: number
+  visible: boolean
 }
