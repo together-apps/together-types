@@ -19,7 +19,7 @@ const eventFormats = {
 
 const sessionRequiredFields = [
   'agenda',
-  'authoredByUserID',
+  // 'authoredBy',
   'categoryID',
   'createdBy',
   'currentEvent',
@@ -44,6 +44,7 @@ const sessionRequiredFields = [
 ]
 
 const sessionOptionalFields = [
+  'authoredBy',
   'finishedAt',
   'startsAt',
   'videoID'
