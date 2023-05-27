@@ -54,7 +54,8 @@ const PushNotificationTypes = {
   sessionInvite: 'sessionInvite',
   sessionStarting: 'sessionStarting',
   sessionTimeConfirmed: 'sessionTimeConfirmed',
-  sessionStartingSoon: 'sessionStartingSoon'
+  sessionStartingSoon: 'sessionStartingSoon',
+  sessionCancelled: 'sessionCancelled'
 }
 
 module.exports = {
