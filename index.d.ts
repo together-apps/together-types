@@ -9,7 +9,12 @@ export interface UserRecord {
   agoraUid: number
   queryName: string
   notificationsEnabled: boolean
-  lastUsersInvitedToSession?: string[]
+}
+
+export interface LastInvited<FirebaseTimestamp> {
+  sessionID: string
+  userID: string
+  timestamp: FirebaseTimestamp
 }
 
 // Sessions
