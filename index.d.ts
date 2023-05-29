@@ -9,6 +9,7 @@ export interface UserRecord {
   agoraUid: number
   queryName: string
   notificationsEnabled: boolean
+  lastUsersInvitedToSession?: string[]
 }
 
 // Sessions
