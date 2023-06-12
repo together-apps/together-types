@@ -96,6 +96,7 @@ export interface Session<FirebaseTimestamp> {
   tip: string[]
   title: string
   videoID?: string
+  visible?: boolean
 }
 
 // Session reviews are public comments visible to everyone
