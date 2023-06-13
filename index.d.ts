@@ -48,6 +48,7 @@ export interface Event {
   id: string
   title: string
   description: string
+  listenerDescription?: string
   durationSeconds: number
   format: EventFormat
 }
