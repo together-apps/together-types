@@ -49,8 +49,9 @@ export interface Event {
   title: string
   description: string
   listenerDescription?: string
-  durationSeconds: number
   format: EventFormat
+  durationType: 'confirm' | 'duration'
+  durationSeconds: number
 }
 
 export interface OngoingEvent<FirebaseTimestamp> extends Event {
