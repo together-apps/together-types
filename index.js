@@ -17,6 +17,17 @@ const eventFormats = {
   }
 }
 
+const durationTypes = {
+  confirm: {
+    value: 'confirm',
+    label: 'Confirm'
+  },
+  duration: {
+    value: 'duration',
+    label: 'Duration'
+  }
+}
+
 const sessionRequiredFields = [
   'agenda',
   // 'authoredBy',
@@ -60,6 +71,7 @@ const PushNotificationTypes = {
 
 module.exports = {
   eventFormats,
+  durationTypes,
   sessionRequiredFields,
   sessionOptionalFields,
   PushNotificationTypes
