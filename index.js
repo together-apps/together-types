@@ -17,17 +17,6 @@ const eventFormats = {
   }
 }
 
-const durationTypes = {
-  confirm: {
-    value: 'confirm',
-    label: 'Confirm'
-  },
-  duration: {
-    value: 'duration',
-    label: 'Duration'
-  }
-}
-
 const sessionRequiredFields = [
   'agenda',
   // 'authoredBy',
