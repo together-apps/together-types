@@ -60,7 +60,6 @@ const PushNotificationTypes = {
 
 module.exports = {
   eventFormats,
-  durationTypes,
   sessionRequiredFields,
   sessionOptionalFields,
   PushNotificationTypes
