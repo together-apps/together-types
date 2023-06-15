@@ -57,7 +57,7 @@ export interface Event {
 export interface OngoingEvent<FirebaseTimestamp> extends Event {
   startedAt: FirebaseTimestamp
   currentSpeaker: string
-  confirmedBy?: string[]
+  confirmedBy: string[]
 }
 
 export type Color = `#${string}` | 'transparent'
