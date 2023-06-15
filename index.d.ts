@@ -45,13 +45,15 @@ export const eventFormats: {
 }
 
 export interface Event {
-  id: string
-  title: string
+  confirmButtonText?: string
   description: string
-  listenerDescription?: string
-  format: EventFormat
-  durationType: 'confirm' | 'duration'
   durationSeconds: number
+  durationType: 'confirm' | 'duration'
+  format: EventFormat
+  id: string
+  listenerDescription?: string
+  nextButtonText?: string
+  title: string
 }
 
 export interface OngoingEvent<FirebaseTimestamp> extends Event {
