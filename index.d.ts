@@ -54,6 +54,7 @@ export interface Event {
   listenerDescription?: string
   nextButtonText?: string
   title: string
+  linkedToNext?: boolean
 }
 
 export interface OngoingEvent<FirebaseTimestamp> extends Event {
