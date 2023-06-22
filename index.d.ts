@@ -1,5 +1,5 @@
 // Profile
-export interface UserRecord {
+export interface UserRecord<FirebaseTimestamp> {
   id: string
   email: string
   firstName: string
@@ -9,6 +9,8 @@ export interface UserRecord {
   agoraUid: number
   queryName: string
   notificationsEnabled: boolean
+  createdAt: FirebaseTimestamp
+  lastSeen: FirebaseTimestamp
 }
 
 export interface LastInvited<FirebaseTimestamp> {
