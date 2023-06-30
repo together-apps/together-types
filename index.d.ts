@@ -156,4 +156,6 @@ export interface Video<FirebaseTimestamp> {
   originalSize: number
   hdSize?: number
   sdSize?: number
+  length: number
+  includedInTemplates: string[]
 }
