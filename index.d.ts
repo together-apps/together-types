@@ -154,6 +154,6 @@ export interface Video<FirebaseTimestamp> {
   jobID: string
   createdAt: FirebaseTimestamp
   originalSize: number
-  hdSize: number
-  sdSize: number
+  hdSize?: number
+  sdSize?: number
 }
