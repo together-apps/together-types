@@ -146,3 +146,14 @@ export interface DiscoverCategory {
   priority: number
   visible: boolean
 }
+
+export interface Video<FirebaseTimestamp> {
+  id: string
+  name: string
+  processed: boolean
+  jobID: string
+  createdAt: FirebaseTimestamp
+  originalSize: number
+  hdSize: number
+  sdSize: number
+}
