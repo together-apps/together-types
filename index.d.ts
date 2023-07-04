@@ -159,3 +159,9 @@ export interface Video<FirebaseTimestamp> {
   duration: number
   includedInTemplates: string[]
 }
+
+export interface Statistic {
+  total?: number
+  created?: number
+  deleted?: number
+}
