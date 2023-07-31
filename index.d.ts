@@ -84,6 +84,7 @@ export interface Session<FirebaseTimestamp> {
   agenda: Event[]
   authoredBy?: string
   categoryID: string
+  completedBy?: string[]
   createdBy: string
   currentEvent: OngoingEvent<FirebaseTimestamp> | 'waiting' | 'finished'
   description: string
