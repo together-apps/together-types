@@ -91,6 +91,7 @@ export interface Session<FirebaseTimestamp> {
   help: string
   howItWorks: string
   id: string
+  imageID?: string
   intro: string[]
   location: string
   participants: string[]
