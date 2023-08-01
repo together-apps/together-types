@@ -1,29 +1,29 @@
 // Profile
 export interface UserRecord<FirebaseTimestamp> {
-  id: string
+  agoraUid: number
+  avatar: string
+  bio: string
+  createdAt: FirebaseTimestamp
   email: string
   firstName: string
+  id: string
   lastName: string
-  bio: string
-  avatar: string
-  agoraUid: number
-  queryName: string
-  notificationsEnabled: boolean
-  createdAt: FirebaseTimestamp
   lastSeen: FirebaseTimestamp
+  notificationsEnabled: boolean
+  queryName: string
 }
 
 export interface LastInvited<FirebaseTimestamp> {
   sessionID: string
-  userID: string
   timestamp: FirebaseTimestamp
+  userID: string
 }
 
 // Sessions
 export enum EventFormat {
-  OneAtTheTime = 'one_at_the_time',
   AllAtOnce = 'all_at_once',
   HostOnly = 'host_only',
+  OneAtTheTime = 'one_at_the_time',
   OnePerson = 'one_person'
 }
 
@@ -53,30 +53,30 @@ export interface Event {
   durationType: 'confirm' | 'duration'
   format: EventFormat
   id: string
+  linkedToNext?: boolean
   listenerDescription?: string
   nextButtonText?: string
   title: string
-  linkedToNext?: boolean
 }
 
 export interface OngoingEvent<FirebaseTimestamp> extends Event {
-  startedAt: FirebaseTimestamp
-  currentSpeaker: string
   confirmedBy: string[]
+  currentSpeaker: string
+  startedAt: FirebaseTimestamp
 }
 
 export type Color = `#${string}` | 'transparent'
 
 export interface Category {
+  color: Color
+  description: string
   id: string
   title: string
-  description: string
-  color: Color
 }
 
 export interface SessionStartingTime {
-  start: string
   acceptedBy: string[]
+  start: string
 }
 
 // When updating this, also update the sessionRequiredFields and sessionOptionalFields in index.js
@@ -118,17 +118,17 @@ export interface Review<FirebaseTimestamp> {
 // Reflections are private notes only visible to the author
 export interface SessionReflection<FirebaseTimestamp> {
   authorID: string
-  sessionID: string
-  reflection: string
   createdAt: FirebaseTimestamp
+  reflection: string
+  sessionID: string
 }
 
 export const PushNotificationTypes: {
+  sessionCancelled: 'sessionCancelled'
   sessionInvite: 'sessionInvite'
   sessionStarting: 'sessionStarting'
-  sessionTimeConfirmed: 'sessionTimeConfirmed'
   sessionStartingSoon: 'sessionStartingSoon'
-  sessionCancelled: 'sessionCancelled'
+  sessionTimeConfirmed: 'sessionTimeConfirmed'
 }
 
 type SessionKeys = keyof Session<any>
@@ -140,29 +140,29 @@ export const test: string
 
 export interface DiscoverCategory {
   id: string
-  title: string
-  type: 'curated' // TODO add types for auto-added sessions like 'popular' and 'quick' etc
+  priority: number
   sessions?: string[]
   thumbnailType: 'video' | 'default'
-  priority: number
+  title: string
+  type: 'curated' // TODO add types for auto-added sessions like 'popular' and 'quick' etc
   visible: boolean
 }
 
 export interface Video<FirebaseTimestamp> {
-  id: string
-  name: string
-  processed: boolean
-  jobID: string
   createdAt: FirebaseTimestamp
-  originalSize: number
-  hdSize?: number
-  sdSize?: number
   duration: number
+  hdSize?: number
+  id: string
   includedInTemplates: string[]
+  jobID: string
+  name: string
+  originalSize: number
+  processed: boolean
+  sdSize?: number
 }
 
 export interface Statistic {
-  total?: number
   created?: number
   deleted?: number
+  total?: number
 }
