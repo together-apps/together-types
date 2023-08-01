@@ -11,6 +11,7 @@ export interface UserRecord<FirebaseTimestamp> {
   lastSeen: FirebaseTimestamp
   notificationsEnabled: boolean
   queryName: string
+  status: 'online' | 'offline'
 }
 
 export interface LastInvited<FirebaseTimestamp> {
