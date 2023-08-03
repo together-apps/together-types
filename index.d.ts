@@ -3,6 +3,7 @@ export interface UserRecord<FirebaseTimestamp> {
   agoraUid: number
   avatar: string
   bio: string
+  categoryInterests?: string[]
   createdAt: FirebaseTimestamp
   email: string
   firstName: string
