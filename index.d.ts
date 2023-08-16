@@ -73,6 +73,7 @@ export interface Category {
   color: Color
   description: string
   id: string
+  icon?: string
   title: string
 }
 
