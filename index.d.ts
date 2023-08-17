@@ -1,3 +1,9 @@
+// General
+export interface Asset {
+  id: string
+  downloadURL: string
+}
+
 // Profile
 export interface UserRecord<FirebaseTimestamp> {
   agoraUid: number
@@ -73,7 +79,7 @@ export interface Category {
   color: Color
   description: string
   id: string
-  icon?: string
+  icon?: Asset
   title: string
 }
 
