@@ -28,7 +28,7 @@ const sessionRequiredFields = [
   'help',
   'howItWorks',
   'id',
-  // 'imageID',
+  // 'image',
   'intro',
   'location',
   'participants',
@@ -47,7 +47,7 @@ const sessionRequiredFields = [
 const sessionOptionalFields = [
   'authoredBy',
   'finishedAt',
-  'imageID',
+  'image',
   'startsAt',
   'videoID'
 ]
