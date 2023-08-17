@@ -1,7 +1,8 @@
 // General
 export interface Asset {
+  downloadURL1080x1080: string
+  downloadURL96x96: string
   id: string
-  downloadURL: string
 }
 
 // Profile
