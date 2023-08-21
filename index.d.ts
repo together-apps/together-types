@@ -106,6 +106,7 @@ export interface Session<FirebaseTimestamp> {
   image?: Asset
   intro: string[]
   location: string
+  numberOfOpenSeats?: number
   participants: string[]
   principles: string
   proposedStartingTimes: SessionStartingTime[]
