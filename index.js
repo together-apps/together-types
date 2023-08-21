@@ -31,6 +31,7 @@ const sessionRequiredFields = [
   // 'image',
   'intro',
   'location',
+  // 'numberOfOpenSeats',
   'participants',
   'principles',
   'proposedStartingTimes',
@@ -40,7 +41,8 @@ const sessionRequiredFields = [
   'subtitle',
   'templateID',
   'tip',
-  'title'
+  'title',
+  'type'
   // 'videoID',
 ]
 
@@ -48,8 +50,10 @@ const sessionOptionalFields = [
   'authoredBy',
   'finishedAt',
   'image',
+  'numberOfOpenSeats',
   'startsAt',
-  'videoID'
+  'videoID',
+  'visible'
 ]
 
 const PushNotificationTypes = {
