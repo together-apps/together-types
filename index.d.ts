@@ -36,6 +36,11 @@ export enum EventFormat {
   OnePerson = 'one_person'
 }
 
+export enum SessionTypes {
+  OpenTable = 'open_table',
+  InviteOnly = 'invite_only',
+}
+
 export const eventFormats: {
   [EventFormat.OneAtTheTime]: {
     value: EventFormat.OneAtTheTime
@@ -114,6 +119,7 @@ export interface Session<FirebaseTimestamp> {
   templateID: string
   tip: string[]
   title: string
+  type?: SessionTypes
   videoID?: string
   visible?: boolean
 }
