@@ -104,6 +104,7 @@ export interface Session<FirebaseTimestamp> {
   howItWorks: string
   id: string
   image?: Asset
+  inCall?: Array<{ userID: string, agoraID: number }>
   intro: string[]
   location: string
   numberOfOpenSeats?: number

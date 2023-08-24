@@ -29,6 +29,7 @@ const sessionRequiredFields = [
   'howItWorks',
   'id',
   // 'image',
+  // 'inCall',
   'intro',
   'location',
   // 'numberOfOpenSeats',
