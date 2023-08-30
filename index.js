@@ -42,8 +42,8 @@ const sessionRequiredFields = [
   'subtitle',
   'templateID',
   'tip',
-  'title',
-  'type'
+  'title'
+  // 'type'
   // 'videoID',
 ]
 
@@ -53,6 +53,7 @@ const sessionOptionalFields = [
   'image',
   'numberOfOpenSeats',
   'startsAt',
+  'type',
   'videoID',
   'visible'
 ]
