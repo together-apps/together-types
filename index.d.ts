@@ -144,6 +144,7 @@ export const PushNotificationTypes: {
   sessionStarting: 'sessionStarting'
   sessionStartingSoon: 'sessionStartingSoon'
   sessionTimeConfirmed: 'sessionTimeConfirmed'
+  sessionOpenTableJoinLeave: 'sessionOpenTableJoinLeave'
 }
 
 type SessionKeys = keyof Session<any>
