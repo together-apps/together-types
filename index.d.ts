@@ -88,6 +88,7 @@ export interface Category {
 
 export interface SessionStartingTime {
   acceptedBy: string[]
+  rejectedBy: string[]
   start: string
 }
 
