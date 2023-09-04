@@ -13,7 +13,7 @@ export interface AvatarAsset {
 // Profile
 export interface UserRecord<FirebaseTimestamp> {
   agoraUid: number
-  avatar: AvatarAsset
+  avatar?: AvatarAsset
   bio: string
   categoryInterests?: string[]
   createdAt: FirebaseTimestamp
