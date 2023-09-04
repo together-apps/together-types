@@ -5,10 +5,15 @@ export interface Asset {
   id: string
 }
 
+export interface AvatarAsset {
+  downloadURL200x200: string
+  id: string
+}
+
 // Profile
 export interface UserRecord<FirebaseTimestamp> {
   agoraUid: number
-  avatar: string
+  avatar: AvatarAsset
   bio: string
   categoryInterests?: string[]
   createdAt: FirebaseTimestamp
