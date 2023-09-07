@@ -23,6 +23,7 @@ export interface UserRecord<FirebaseTimestamp> {
   lastName: string
   lastSeen: FirebaseTimestamp
   notificationsEnabled: boolean
+  publicKey?: string
   queryName: string
   status?: 'online' | 'offline'
 }
