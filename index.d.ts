@@ -188,3 +188,19 @@ export interface Statistic {
   deleted?: number
   total?: number
 }
+
+export interface Chat<FirebaseTimestamp> {
+  id: string
+  name: string
+  participants: string[]
+  createdAt: FirebaseTimestamp
+}
+
+export interface Message<FirebaseTimestamp> {
+  authorID: string
+  chatID: string
+  createdAt: FirebaseTimestamp
+  id: string
+  message: string
+  readBy: string[]
+}
