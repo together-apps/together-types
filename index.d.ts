@@ -203,5 +203,4 @@ export interface Message<FirebaseTimestamp> {
   createdAt: FirebaseTimestamp
   id: string
   message: string
-  readBy: string[]
 }
