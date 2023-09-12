@@ -195,6 +195,7 @@ export interface Chat<FirebaseTimestamp> {
   name: string
   participants: string[]
   createdAt: FirebaseTimestamp
+  createdBy: string
 }
 
 export interface Message<FirebaseTimestamp> {
