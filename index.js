@@ -64,7 +64,8 @@ const PushNotificationTypes = {
   sessionTimeConfirmed: 'sessionTimeConfirmed',
   sessionStartingSoon: 'sessionStartingSoon',
   sessionCancelled: 'sessionCancelled',
-  sessionOpenTableJoinLeave: 'sessionOpenTableJoinLeave'
+  sessionOpenTableJoinLeave: 'sessionOpenTableJoinLeave',
+  message: 'message'
 }
 
 module.exports = {
