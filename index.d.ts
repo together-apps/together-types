@@ -205,4 +205,6 @@ export interface Message<FirebaseTimestamp> {
   createdAt: FirebaseTimestamp
   id: string
   message: string
+  thumbsUpBy?: string[]
+  lovedBy?: string[]
 }
