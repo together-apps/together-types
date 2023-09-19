@@ -204,7 +204,8 @@ export interface Message<FirebaseTimestamp> {
   chatID: string
   createdAt: FirebaseTimestamp
   id: string
-  message: string
-  thumbsUpBy?: string[]
   lovedBy?: string[]
+  message: string
+  thumbsDownBy?: string[]
+  thumbsUpBy?: string[]
 }
