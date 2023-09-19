@@ -42,7 +42,7 @@ export enum EventFormat {
   OnePerson = 'one_person'
 }
 
-export type SessionType = 'open_table' | 'invite_only' | 'physical'
+export type SessionType = 'open_table' | 'invite_only' | 'in_person'
 
 export const eventFormats: {
   [EventFormat.OneAtTheTime]: {
