@@ -18,6 +18,7 @@ const eventFormats = {
 }
 
 const sessionRequiredFields = [
+  'acceptedBy',
   'agenda',
   // 'authoredBy',
   'categoryID',
@@ -32,19 +33,21 @@ const sessionRequiredFields = [
   // 'inCall',
   'intro',
   'location',
+  'maxNumberOfParticipants',
   // 'numberOfOpenSeats',
   'participants',
   'principles',
+  'rejectedBy',
   'proposedStartingTimes',
-  'recommendedNumberOfParticipants',
   'setting',
-  // 'startsAt',
+  'startsAt',
   'subtitle',
   'templateID',
   'tip',
   'title'
   // 'type'
   // 'videoID',
+  // 'visible'
 ]
 
 const sessionOptionalFields = [

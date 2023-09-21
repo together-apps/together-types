@@ -91,14 +91,9 @@ export interface Category {
   title: string
 }
 
-export interface SessionStartingTime {
-  acceptedBy: string[]
-  rejectedBy: string[]
-  start: string
-}
-
 // When updating this, also update the sessionRequiredFields and sessionOptionalFields in index.js
 export interface Session<FirebaseTimestamp> {
+  acceptedBy: string[]
   agenda: Event[]
   authoredBy?: string
   categoryID: string
@@ -113,13 +108,13 @@ export interface Session<FirebaseTimestamp> {
   inCall?: Array<{ userID: string, agoraID: number }>
   intro: string[]
   location: string
+  maxNumberOfParticipants: number
   numberOfOpenSeats?: number
   participants: string[]
   principles: string
-  proposedStartingTimes: SessionStartingTime[]
-  recommendedNumberOfParticipants: number
+  rejectedBy: string[]
   setting: string
-  startsAt?: string // undefined if no decided time yet
+  startsAt: string
   subtitle: string
   templateID: string
   tip: string[]
