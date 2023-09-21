@@ -38,7 +38,6 @@ const sessionRequiredFields = [
   'participants',
   'principles',
   'rejectedBy',
-  'proposedStartingTimes',
   'setting',
   'startsAt',
   'subtitle',
