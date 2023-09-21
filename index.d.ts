@@ -71,7 +71,6 @@ export interface Event {
   format: EventFormat
   id: string
   linkedToNext?: boolean
-  listenerDescription?: string
   nextButtonText?: string
   title: string
 }
