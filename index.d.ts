@@ -198,8 +198,8 @@ export interface Message<FirebaseTimestamp> {
   chatID: string
   createdAt: FirebaseTimestamp
   id: string
-  lovedBy: string[]
+  lovedBy?: string[]
   message: string
-  thumbsDownBy: string[]
-  thumbsUpBy: string[]
+  thumbsDownBy?: string[]
+  thumbsUpBy?: string[]
 }
