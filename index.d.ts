@@ -82,6 +82,7 @@ export interface OngoingEvent<FirebaseTimestamp> {
 
 export interface EventWithSpeaker extends Event {
   speaker: string
+  agendaEventID: string
 }
 
 export type Color = `#${string}` | 'transparent'
