@@ -75,10 +75,13 @@ export interface Event {
   title: string
 }
 
-export interface OngoingEvent<FirebaseTimestamp> extends Event {
-  confirmedBy: string[]
-  currentSpeaker: string
+export interface OngoingEvent<FirebaseTimestamp> {
+  id: string
   startedAt: FirebaseTimestamp
+}
+
+export interface EventWithSpeaker extends Event {
+  speaker: string
 }
 
 export type Color = `#${string}` | 'transparent'
@@ -95,6 +98,7 @@ export interface Category {
 export interface Session<FirebaseTimestamp> {
   acceptedBy: string[]
   agenda: Event[]
+  events?: EventWithSpeaker[] // Calculated from agenda on participant update
   authoredBy?: string
   categoryID: string
   createdBy: string
