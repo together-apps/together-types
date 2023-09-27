@@ -134,6 +134,7 @@ export interface Review<FirebaseTimestamp> {
   authorID: string
   comment: string
   createdAt: FirebaseTimestamp
+  templateID: string
 }
 
 // Reflections are private notes only visible to the author
