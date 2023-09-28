@@ -134,6 +134,7 @@ export interface Review<FirebaseTimestamp> {
   authorID: string
   comment: string
   createdAt: FirebaseTimestamp
+  id: string
   templateID: string
 }
 
