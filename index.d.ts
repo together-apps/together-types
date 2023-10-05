@@ -64,6 +64,7 @@ export const eventFormats: {
 }
 
 export interface Event {
+  cardTypeID?: string
   confirmButtonText?: string
   description: string
   durationSeconds: number
