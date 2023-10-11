@@ -74,6 +74,7 @@ export interface Event {
   linkedToNext?: boolean
   nextButtonText?: string
   title: string
+  videoID?: string
 }
 
 export interface OngoingEvent<FirebaseTimestamp> {
