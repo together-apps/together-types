@@ -101,13 +101,13 @@ export interface Category {
 export interface Session<FirebaseTimestamp> {
   acceptedBy: string[]
   agenda: Event[]
-  events?: EventWithSpeaker[] // Calculated from agenda on participant update
   authoredBy?: string
   categoryID: string
   createdAt: FirebaseTimestamp
   createdBy: string
   currentEvent: OngoingEvent<FirebaseTimestamp> | 'waiting' | 'finished'
   description: string
+  events?: EventWithSpeaker[] // Calculated from agenda on participant update
   finishedAt?: string
   help: string
   howItWorks: string
