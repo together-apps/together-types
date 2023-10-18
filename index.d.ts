@@ -104,6 +104,7 @@ export interface Session<FirebaseTimestamp> {
   events?: EventWithSpeaker[] // Calculated from agenda on participant update
   authoredBy?: string
   categoryID: string
+  createdAt: FirebaseTimestamp
   createdBy: string
   currentEvent: OngoingEvent<FirebaseTimestamp> | 'waiting' | 'finished'
   description: string
