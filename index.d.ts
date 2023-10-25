@@ -80,6 +80,7 @@ export interface Event {
 export interface OngoingEvent<FirebaseTimestamp> {
   id: string
   startedAt: FirebaseTimestamp
+  videoStartedAt?: FirebaseTimestamp
 }
 
 export interface EventWithSpeaker extends Event {
