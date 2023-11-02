@@ -98,9 +98,15 @@ export interface Category {
   title: string
 }
 
+export interface TitleDescription {
+  title: string
+  description: string
+}
+
 // When updating this, also update the sessionRequiredFields and sessionOptionalFields in index.js
 export interface Session<FirebaseTimestamp> {
   acceptedBy: string[]
+  additionalInfo?: TitleDescription[]
   agenda: Event[]
   authoredBy?: string
   categoryID: string

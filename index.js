@@ -45,6 +45,7 @@ const sessionRequiredFields = [
 ]
 
 const sessionOptionalFields = [
+  'additionalInfo',
   'authoredBy',
   'finishedAt',
   'image',
