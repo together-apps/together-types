@@ -110,8 +110,6 @@ export interface Session<FirebaseTimestamp> {
   description: string
   events?: EventWithSpeaker[] // Calculated from agenda on participant update
   finishedAt?: string
-  help: string
-  howItWorks: string
   id: string
   image?: Asset
   inCall?: Array<{ userID: string, agoraID: number }>
@@ -120,13 +118,10 @@ export interface Session<FirebaseTimestamp> {
   maxNumberOfParticipants: number
   numberOfOpenSeats?: number
   participants: string[]
-  principles: string
   rejectedBy: string[]
-  setting: string
   startsAt: string
   subtitle: string
   templateID: string
-  tip: string[]
   title: string
   type?: SessionType
   videoID?: string

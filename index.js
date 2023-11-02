@@ -26,8 +26,6 @@ const sessionRequiredFields = [
   'currentEvent',
   'description',
   // 'finishedAt',
-  'help',
-  'howItWorks',
   'id',
   // 'image',
   // 'inCall',
@@ -36,13 +34,10 @@ const sessionRequiredFields = [
   'maxNumberOfParticipants',
   // 'numberOfOpenSeats',
   'participants',
-  'principles',
   'rejectedBy',
-  'setting',
   'startsAt',
   'subtitle',
   'templateID',
-  'tip',
   'title'
   // 'type'
   // 'videoID',
