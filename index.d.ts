@@ -26,6 +26,7 @@ export interface UserRecord<FirebaseTimestamp> {
   publicKey?: string
   queryName: string
   status?: 'online' | 'offline'
+  introVersionLastSeen?: number
 }
 
 export interface LastInvited<FirebaseTimestamp> {
