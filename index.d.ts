@@ -132,6 +132,7 @@ export interface Session<FirebaseTimestamp> {
   title: string
   type?: SessionType
   videoID?: string
+  videoStreamID?: string // The id of any connected video stream, streaming event videos
   visible?: boolean
 }
 
