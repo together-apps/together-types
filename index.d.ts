@@ -109,6 +109,7 @@ export interface Session<FirebaseTimestamp> {
   acceptedBy: string[]
   additionalInfo?: TitleDescription[]
   agenda: Event[]
+  apiVersion?: number
   authoredBy?: string
   categoryID: string
   createdAt: FirebaseTimestamp
