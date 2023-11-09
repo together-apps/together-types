@@ -20,6 +20,7 @@ const eventFormats = {
 const sessionRequiredFields = [
   'acceptedBy',
   'agenda',
+  // 'apiVersion',
   // 'authoredBy',
   'categoryID',
   'createdBy',
@@ -46,6 +47,7 @@ const sessionRequiredFields = [
 
 const sessionOptionalFields = [
   'additionalInfo',
+  'apiVersion',
   'authoredBy',
   'finishedAt',
   'image',
