@@ -65,6 +65,7 @@ const PushNotificationTypes = {
   sessionStartingSoon: 'sessionStartingSoon',
   sessionCancelled: 'sessionCancelled',
   sessionOpenTableJoinLeave: 'sessionOpenTableJoinLeave',
+  sessionParticipantsChanged: 'sessionParticipantsChanged',
   message: 'message'
 }
 

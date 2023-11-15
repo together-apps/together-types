@@ -160,6 +160,7 @@ export const PushNotificationTypes: {
   sessionStartingSoon: 'sessionStartingSoon'
   sessionTimeConfirmed: 'sessionTimeConfirmed'
   sessionOpenTableJoinLeave: 'sessionOpenTableJoinLeave'
+  sessionParticipantsChanged: 'sessionParticipantsChanged'
   message: 'message'
 }
 
