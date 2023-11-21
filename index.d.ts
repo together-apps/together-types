@@ -181,6 +181,17 @@ export interface DiscoverCategory {
   visible: boolean
 }
 
+export interface Course<FirebaseTimestamp> {
+  additionalInfo?: TitleDescription[]
+  createdAt: FirebaseTimestamp
+  createdBy: string
+  id: string
+  order: string[]
+  subtitle: string
+  title: string
+  // TODO: Add price using Price type
+}
+
 export interface Video<FirebaseTimestamp> {
   createdAt: FirebaseTimestamp
   duration: number
