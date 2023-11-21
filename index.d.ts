@@ -182,10 +182,11 @@ export interface DiscoverCategory {
 }
 
 export interface Course<FirebaseTimestamp> {
-  additionalInfo?: TitleDescription[]
+  additionalInfo: TitleDescription[]
   createdAt: FirebaseTimestamp
   createdBy: string
   id: string
+  image?: Asset
   order: string[]
   subtitle: string
   title: string
