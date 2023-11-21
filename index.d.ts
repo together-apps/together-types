@@ -190,6 +190,7 @@ export interface Course<FirebaseTimestamp> {
   order: string[]
   subtitle: string
   title: string
+  visible: boolean
   // TODO: Add price using Price type
 }
 
