@@ -20,13 +20,14 @@ export interface UserRecord<FirebaseTimestamp> {
   email: string
   firstName: string
   id: string
+  introVersionLastSeen?: number
   lastName: string
   lastSeen: FirebaseTimestamp
   notificationsEnabled: boolean
   publicKey?: string
   queryName: string
+  role?: 'creator' | 'user'
   status?: 'online' | 'offline'
-  introVersionLastSeen?: number
 }
 
 export interface LastInvited<FirebaseTimestamp> {
