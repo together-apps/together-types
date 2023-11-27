@@ -113,6 +113,7 @@ export interface Session<FirebaseTimestamp> {
   apiVersion?: number
   authoredBy?: string
   categoryID: string
+  courseID?: string
   createdAt: FirebaseTimestamp
   createdBy: string
   currentEvent: OngoingEvent<FirebaseTimestamp> | 'waiting' | 'finished'
