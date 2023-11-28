@@ -184,9 +184,11 @@ export interface DiscoverCategory {
 }
 
 export interface Course<FirebaseTimestamp> extends CourseTemplate<FirebaseTimestamp> {
+  completed: boolean
   createdBy: string
   participants: string[]
   startsAt: FirebaseTimestamp
+  templateID: string
 }
 
 export interface CourseTemplate<FirebaseTimestamp> {
