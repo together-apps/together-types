@@ -183,7 +183,13 @@ export interface DiscoverCategory {
   visible: boolean
 }
 
-export interface Course<FirebaseTimestamp> {
+export interface Course<FirebaseTimestamp> extends CourseTemplate<FirebaseTimestamp> {
+  createdBy: string
+  participants: string[]
+  startsAt: FirebaseTimestamp
+}
+
+export interface CourseTemplate<FirebaseTimestamp> {
   additionalInfo: TitleDescription[]
   authoredBy: string
   createdAt: FirebaseTimestamp
