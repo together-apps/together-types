@@ -196,6 +196,7 @@ export interface Course<FirebaseTimestamp> extends CourseTemplate<FirebaseTimest
 export interface CourseTemplate<FirebaseTimestamp> {
   additionalInfo: TitleDescription[]
   authoredBy: string
+  color: Color
   createdAt: FirebaseTimestamp
   id: string
   image?: Asset
