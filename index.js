@@ -68,7 +68,8 @@ const PushNotificationTypes = {
   sessionCancelled: 'sessionCancelled',
   sessionOpenTableJoinLeave: 'sessionOpenTableJoinLeave',
   sessionParticipantsChanged: 'sessionParticipantsChanged',
-  message: 'message'
+  message: 'message',
+  courseInvite: 'courseInvite'
 }
 
 module.exports = {

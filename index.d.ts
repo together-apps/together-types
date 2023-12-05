@@ -164,6 +164,7 @@ export const PushNotificationTypes: {
   sessionOpenTableJoinLeave: 'sessionOpenTableJoinLeave'
   sessionParticipantsChanged: 'sessionParticipantsChanged'
   message: 'message'
+  courseInvite: 'courseInvite'
 }
 
 type SessionKeys = keyof Session<any>
