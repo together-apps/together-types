@@ -24,6 +24,12 @@ export interface UserRecord<FirebaseTimestamp> {
   introVersionLastSeen?: number
   lastName: string
   lastSeen: FirebaseTimestamp
+  links?: {
+    instagram?: string
+    linkedin?: string
+    website?: string
+    x?: string
+  }
   notificationsEnabled: boolean
   publicKey?: string
   queryName: string
