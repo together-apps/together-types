@@ -26,7 +26,7 @@ export interface UserRecord<FirebaseTimestamp> {
   lastSeen: FirebaseTimestamp
   links?: {
     instagram?: string
-    linkedin?: string
+    linkedIn?: string
     website?: string
     x?: string
   }
