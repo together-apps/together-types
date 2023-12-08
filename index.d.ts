@@ -7,6 +7,7 @@ export interface Asset {
 
 export interface AvatarAsset {
   downloadURL200x200: string
+  downloadURL1080x1080: string
   id: string
 }
 
