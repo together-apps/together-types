@@ -126,7 +126,6 @@ export interface Session<FirebaseTimestamp> {
   currentEvent: OngoingEvent<FirebaseTimestamp> | 'waiting' | 'finished'
   description: string
   events?: EventWithSpeaker[] // Calculated from agenda on participant update
-  finishedAt?: string
   id: string
   image?: Asset
   inCall?: Array<{ userID: string, agoraID: number }>
