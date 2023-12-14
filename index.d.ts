@@ -202,6 +202,7 @@ export interface Course<FirebaseTimestamp> extends CourseTemplate<FirebaseTimest
 }
 
 export interface CourseTemplate<FirebaseTimestamp> {
+  accentColor: Color
   additionalInfo: TitleDescription[]
   authoredBy: string
   color: Color
