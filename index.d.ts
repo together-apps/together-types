@@ -201,6 +201,12 @@ export interface Course<FirebaseTimestamp> extends CourseTemplate<FirebaseTimest
   templateID: string
 }
 
+export interface SessionPreview {
+  image?: Asset
+  categoryID: string
+  title: string
+}
+
 export interface CourseTemplate<FirebaseTimestamp> {
   accentColor: Color
   additionalInfo: TitleDescription[]
@@ -213,6 +219,7 @@ export interface CourseTemplate<FirebaseTimestamp> {
   subtitle: string
   title: string
   visible: boolean
+  sessionsPreview?: SessionPreview[] // Used for displaying the stack under the thumbnail
   // TODO: Add price using Price type
 }
 
