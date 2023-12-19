@@ -182,8 +182,10 @@ export const sessionOptionalFields: SessionKeys[]
 export const test: string
 
 export interface DiscoverCategory {
+  contentType: 'sessions' | 'profiles'
   id: string
   priority: number
+  profiles?: string[]
   sessions?: string[]
   thumbnailType: 'video' | 'default'
   title: string
