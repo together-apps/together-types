@@ -182,7 +182,8 @@ export const sessionOptionalFields: SessionKeys[]
 export const test: string
 
 export interface DiscoverCategory {
-  contentType: 'sessions' | 'profiles'
+  contentType: 'sessions' | 'profiles' | 'courses'
+  courses?: string[]
   id: string
   priority: number
   profiles?: string[]
