@@ -202,6 +202,7 @@ export interface Course<FirebaseTimestamp> extends CourseTemplate<FirebaseTimest
   rejectedBy: string[]
   startsAt: FirebaseTimestamp
   templateID: string
+  videoID?: string
 }
 
 export interface SessionPreview {
