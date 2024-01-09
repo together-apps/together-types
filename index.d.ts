@@ -198,6 +198,8 @@ export interface Course<FirebaseTimestamp> extends CourseTemplate<FirebaseTimest
   acceptedBy: string[]
   completed: boolean
   createdBy: string
+  numberOfCompletedTemplates?: number
+  numberOfTemplates?: number
   participants: string[]
   rejectedBy: string[]
   startsAt: FirebaseTimestamp
