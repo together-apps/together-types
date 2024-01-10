@@ -221,10 +221,10 @@ export interface CourseTemplate<FirebaseTimestamp> {
   image?: Asset
   numberOfTemplates?: number
   order: string[]
+  sessionsPreview?: SessionPreview[] // Used for displaying the stack under the thumbnail
   subtitle: string
   title: string
   visible: boolean
-  sessionsPreview?: SessionPreview[] // Used for displaying the stack under the thumbnail
   // TODO: Add price using Price type
 }
 
