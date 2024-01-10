@@ -199,7 +199,6 @@ export interface Course<FirebaseTimestamp> extends CourseTemplate<FirebaseTimest
   completed: boolean
   createdBy: string
   numberOfCompletedTemplates?: number
-  numberOfTemplates?: number
   participants: string[]
   rejectedBy: string[]
   startsAt: FirebaseTimestamp
@@ -220,6 +219,7 @@ export interface CourseTemplate<FirebaseTimestamp> {
   createdAt: FirebaseTimestamp
   id: string
   image?: Asset
+  numberOfTemplates?: number
   order: string[]
   subtitle: string
   title: string
