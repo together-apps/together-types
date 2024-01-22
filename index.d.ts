@@ -265,3 +265,11 @@ export interface Message<FirebaseTimestamp> {
   thumbsDownBy?: string[]
   thumbsUpBy?: string[]
 }
+
+export interface Thread<FirebaseTimestamp> {
+  assistantID: string
+  threadID: string
+  createdAt: FirebaseTimestamp
+  createdBy: string
+  lastActivityAt: FirebaseTimestamp
+}
