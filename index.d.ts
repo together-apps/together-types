@@ -268,8 +268,8 @@ export interface Message<FirebaseTimestamp> {
 
 export interface Thread<FirebaseTimestamp> {
   assistantID: string
-  threadID: string
   createdAt: FirebaseTimestamp
   createdBy: string
   lastActivityAt: FirebaseTimestamp
+  threadID: string
 }
