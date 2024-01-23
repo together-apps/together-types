@@ -14,6 +14,7 @@ export interface AvatarAsset {
 // Profile
 export interface UserRecord<FirebaseTimestamp> {
   agoraUid: number
+  aiThreadID?: string
   avatar?: AvatarAsset
   bio: string
   categoryInterests?: string[]
