@@ -272,5 +272,9 @@ export interface Thread<FirebaseTimestamp> {
   createdAt: FirebaseTimestamp
   createdBy: string
   lastActivityAt: FirebaseTimestamp
+  replySuggestions?: {
+    messageID: string
+    suggestions: string[]
+  }
   threadID: string
 }
