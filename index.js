@@ -19,6 +19,7 @@ const eventFormats = {
 
 const sessionRequiredFields = [
   'acceptedBy',
+  'archived',
   'agenda',
   // 'apiVersion',
   // 'authoredBy',
